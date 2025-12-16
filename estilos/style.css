@@ -82,11 +82,11 @@ section#ficha img.foto {
   object-fit: cover;
   overflow: hidden;
   border-radius: 50%;
+  margin-bottom: 15px;  
   border: 5px solid var(--fundo-card);
   outline: 5px solid var(--destaque);
   display: block;
   margin: auto;
-  margin-bottom: 15px;
 }
 
 section#ficha h1 {
@@ -260,6 +260,22 @@ footer a:hover {
 }
 
 @media screen and (min-width: 768px) {
+
+  main {
+    grid-template-columns: auto 300px 1fr auto;
+  }
+
+  section#ficha {
+    grid-column: 2 / 3;
+    height: fit-content;
+    position: sticky;
+    top: 65px;
+  }
+
+  section#detalhe {
+    grid-column: 3 / 4;
+  }
+
   #skill-container {
     grid-template-columns: 1fr 1fr;
   }
